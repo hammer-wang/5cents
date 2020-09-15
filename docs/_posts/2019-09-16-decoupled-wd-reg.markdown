@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Decoupled Weight Decay Regularization"
-date:   2020-09-16 00:00 -0400
+date:   2020-09-16 00:00:00 -0400
 categories: optimization
 ---
 
