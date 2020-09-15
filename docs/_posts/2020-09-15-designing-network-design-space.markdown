@@ -24,7 +24,6 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/ -->
 
-__Summary__
 This paper introduces a method for designing the design space of deep neural networks. The core idea is to sample network designs from a design space and analyze the quality of the design space using error empirical density function. A good design space would lead to designs with a high concentration of good models. The authors start with a simple, yet generic architecture template based on the standard residual bottleneck block as the unconstrained design space. Through a set of extensive experiments, the authors successfully discovered four ways to constrain the design space to a high-quality region. Specifically, the authors set all residual blocks to share the same bottleneck ratio and group width. In addition, the authors enforce the stage depths to be non-decreasing and the stage widths to follow a quantized linear relationship with respect to the block index. Overall, the authors managed to reduce the design space size from $O(10^{18})$ to $O(10^8)$. Through experiments, the authors found the design space leads to a good performance across a range of flop regimes. With the refined search space, the authors managed to discover a network architecture with similar performance as EfficientNet trained with the same procedure but is up to 5 times faster on GPUs.
 
 __Strengths__

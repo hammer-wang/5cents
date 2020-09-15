@@ -5,7 +5,6 @@ date:   2020-09-15 17:44:12 -0400
 categories: representation-learning
 ---
 
-__Summary__
 In DL literature, researchers often use weight decay and L2 regularization interchangeably. It’s because they are equivalent when using SGD as the regularizer. However, this paper pointed out that the best L2 regularization strength is coupled with the chosen learning rate, while weight decay following the original implementation is not. Moreover, the authors proved that, for adaptive learning rate optimizers, weight decay is no longer equivalent to L2 regularization. Based on this theoretical finding, the authors hypothesized that the widespread weight decay implementation (using $\ell_2$ regularizer) in most DL frameworks is suboptimal and leads to lower accuracy for deep neural networks trained with Adam. To resolve this problem, the authors proposed AdamW, which decouples weight decay with the learning rate. Through extensive experiments, the authors demonstrated that the weight decay is indeed decoupled from the learning rate when using the proposed algorithm. On CIFAR-10 and ImageNet32x32, AdamW outperforms Adam in terms of both convergence and generalization performance. Also, when combined with the warm restart method (Loshchilov & Hutter, 2016), the proposed algorithm can achieve better anytime performance. 
 
 __Strengths__
