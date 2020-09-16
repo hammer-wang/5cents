@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: posts
 title:  "Desining Network Design Space."
 date:   2020-09-15 17:44:12 -0400
 categories: representation-learning
