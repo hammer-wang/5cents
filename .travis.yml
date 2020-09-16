@@ -3,6 +3,8 @@ cache: bundler
 gemfile: docs/Gemfile
 # script:
 #   - bundle exec jekyll algolia --source docs --destination docs/_site --config docs/_config.yml
+script: 
+  - ALGOLIA_API_KEY=6dfdf60b6c42ccb10207b6fdbd8066c0 bundle exec jekyll algolia --source docs --destination docs/_site --config docs/_config.yml
 branches:
   only:
     # Change this to gh-pages if you're deploying using the gh-pages branch
