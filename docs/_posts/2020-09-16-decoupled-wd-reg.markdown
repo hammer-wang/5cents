@@ -1,5 +1,5 @@
 ---
-# layout: posts
+layout: posts
 title:  "Decoupled Weight Decay Regularization."
 date:   2020-09-15 17:44:12 -0400
 categories: representation-learning
